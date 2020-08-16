@@ -199,3 +199,13 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+
+/* Change footer text */
+
+//* Change the footer text
+add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
+function sp_footer_creds_filter( $creds ) {
+	$creds = '<p>[footer_copyright] Álex Goia</p>';
+	return $creds;
+}
