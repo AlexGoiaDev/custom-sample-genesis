@@ -10,17 +10,19 @@
 
 $genesis_sample_default_colors = [
 	'link'   => '#0073e5',
-	'accent' => '#0073e5',
+	'accent' => '#ff5722',
+	'primary' => '#303841',
+	'secondary' => '#00adb5'
 ];
 
 $genesis_sample_link_color = get_theme_mod(
 	'genesis_sample_link_color',
-	$genesis_sample_default_colors['link']
+	$genesis_sample_default_colors['accent']
 );
 
 $genesis_sample_accent_color = get_theme_mod(
 	'genesis_sample_accent_color',
-	$genesis_sample_default_colors['accent']
+	$genesis_sample_default_colors['primary']
 );
 
 $genesis_sample_link_color_contrast   = genesis_sample_color_contrast( $genesis_sample_link_color );
